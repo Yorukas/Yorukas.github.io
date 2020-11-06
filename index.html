@@ -8,6 +8,7 @@
 function escribir(){
 
 var texto=document.forms[0].codigo.value;
+ alert=(texto);
  if (texto=="david") {
 document.forms[0].traduccion.value="CORRECTO";
   alert("CORRECTO");
@@ -27,7 +28,7 @@ En esta página debes introducir el código secreto obtenido y te diré si es co
  name="formulario1"
  action="regidtrar.php" method="get">
 
-<INPUT name="codigo" type="text" size="30" value="hola" />
+<INPUT name="codigo" type="text" size="30" value="" />
 <INPUT type="button" id="boton1" name="boton" value="PULSA" ONCLICK="escribir();"    />
 <INPUT name="traduccion" type="text" size="30" value=""/>
 </form>
