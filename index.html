@@ -8,8 +8,11 @@
 function escribir(){
 
 var texto=document.forms[0].codigo.value;
-document.forms[0].traduccion.value=texto;
-
+ if (texto="2250") {
+document.forms[0].traduccion.value="CORRECTO";
+ } else {
+  document.forms[0].traduccion.value="SIGUE BUSCANDO";
+ }
 }
 </script>
 
