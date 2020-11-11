@@ -1,7 +1,43 @@
-<HTML>
-<HEAD>
-</HEAD>
-<BODY>
-ESTE ES EL RETO UNO
-</BODY>
-</HTML>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>VALIDACION DE CODIGOS</title>
+
+<script>
+function escribir(){
+
+var texto=document.forms[0].codigo.value;
+ alert=(texto);
+ if (texto=="2250") {
+document.forms[0].traduccion.value="CORRECTO";
+  alert("CORRECTO");
+ } else {
+  document.forms[0].traduccion.value="SIGUE BUSCANDO";
+   alert("SIGUE BUSCANDO");
+ }
+}
+</script>
+
+
+
+</head>
+<body>
+En esta página debes introducir el código secreto obtenido y te diré si es correcto
+ <p>
+<a href="retoUNO.html">RETO 243454545</a>.
+</p>
+<form id="f1"
+ name="formulario1"
+ action="regidtrar.php" method="get">
+
+<INPUT name="codigo" type="text" size="30" value="" />
+<INPUT type="button" id="boton1" name="boton" value="PULSA" ONCLICK="escribir();"    />
+<INPUT name="traduccion" type="text" size="30" value=""/>
+</form>
+
+
+
+
+</body>
+</html>
