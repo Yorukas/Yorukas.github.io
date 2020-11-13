@@ -10,6 +10,13 @@
 		P { margin-bottom: 0.21cm; so-language: zxx }
 	-->
 	</STYLE>
+		
+		<script>
+			function newVentana(pagina2){
+				ventana=open(pagina2,"ventana");
+				window.closed()
+			}
+		</script>
 </HEAD>
 <BODY background="fondo1.png" LANG="de-DE" BGCOLOR="151A40" DIR="LTR" STYLE="border: 4.00pt solid #990000; padding: 0.05cm">
 <DIV TYPE=HEADER>
@@ -28,7 +35,7 @@
 </P><FONT COLOR="#66ccff" FACE="Britannic Bold, sans-serif" SIZE=7 STYLE="font-size: 12pt">
 	
 	<form name="menu">
-		<BLOCKQUOTE><input type="image" name="uno" src="uno.png" />&nbsp;<input type="image" name="reto1" src="botonReto1.png" onclick="window.open('Reto1pag1.html');" /></BLOCKQUOTE>
+		<BLOCKQUOTE><input type="image" name="uno" src="uno.png" />&nbsp;<input type="image" name="reto1" src="botonReto1.png" onclick="newVentana('Reto1pag1.html');" /></BLOCKQUOTE>
 		<BLOCKQUOTE><input type="image" name="dos" src="dos.png" />&nbsp;<input type="image" name="reto2" src="botonReto2.png" onclick="window.open('Reto2pag1.html');" /></BLOCKQUOTE>
 		<BLOCKQUOTE><input type="image" name="tres" src="tres.png" />&nbsp;<input type="image" name="reto3" src="botonReto3.png" onclick="window.open('Reto3pag1.html');" /></BLOCKQUOTE>
 		<BLOCKQUOTE><input type="image" name="cuatro" src="cuatro.png" />&nbsp;<input type="image" name="reto4" src="botonReto4.png" onclick="window.open('Reto4pag1.html');" /></BLOCKQUOTE>
