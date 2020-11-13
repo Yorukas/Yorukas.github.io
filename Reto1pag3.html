@@ -16,6 +16,15 @@
 		P { margin-bottom: 0.21cm; so-language: zxx }
 	-->
 	</STYLE>
+		
+		function parImpar(numero) {
+		if (numero % 2 == 0 ) {
+		return "par";
+		} else {
+		return "impar";
+		}
+		}
+		
 </HEAD>
 <BODY LANG="de-DE" BGCOLOR="#ffff99" DIR="LTR" STYLE="border: 4.00pt solid #990000; padding: 0.05cm">
 <DIV TYPE=HEADER>
@@ -80,10 +89,37 @@ DE LA VERIFICACI&Oacute;N</B></I></FONT></FONT></P>
 		
 		
 			
-		
+		var vamos=0;
 		
 		//Proceso para comprobar que son los primeros naturales impares
+		if (parImapr(b11)=="impar" && b11<18) {
+			vamos=vamos+1;
+		}
+		if (parImapr(b12)=="impar" && b12<18) {
+			vamos=vamos+1;
+		}	
+		if (parImapr(b13)=="impar" && b13<18) {
+			vamos=vamos+1;
+		}	
+		if (parImapr(b21)=="impar" && b21<18) {
+			vamos=vamos+1;
+		}
+		if (parImapr(b22)=="impar" && b22<18) {
+			vamos=vamos+1;
+		}
+		if (parImapr(b23)=="impar" && b23<18) {
+			vamos=vamos+1;
+		}
+		if (parImapr(b31)=="impar" && b31<18) {
+			vamos=vamos+1;
+		}
 		
+		if (parImapr(b32)=="impar" && b32<18) {
+			vamos=vamos+1;
+		}
+		if (parImapr(b33)=="impar" && b33<18) {
+			vamos=vamos+1;
+		}
 		//Proceso para comprobar que siempre suman 27
 		
 		var contador=0;
@@ -120,7 +156,11 @@ DE LA VERIFICACI&Oacute;N</B></I></FONT></FONT></P>
 		} else {
 			texto11=texto6;
 		}
-		
+		if (vamos==9) {
+			texto12=texto3; 
+		}else{
+			texto12=texto4;
+		}
 		document.writeln("1 . "+texto10+"<br>");
 		document.writeln("2 . "+texto11+"<br>");
 		document.writeln("3 . "+texto12+"<br>");
