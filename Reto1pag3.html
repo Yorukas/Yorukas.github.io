@@ -58,8 +58,50 @@ DE LA VERIFICACI&Oacute;N</B></I></FONT></FONT></P>
 		var a31=urlParams.get("a31");
 		var a32=urlParams.get("a32");
 		var a33=urlParams.get("a33");
-		alert(""+a11+" "+a12+" "+a13+" "+a21+" "+a22+" "+a23+" "+a31+" "+a32+" "+a33); 
-	
+		
+		
+		var fila1=a11+a12+a13;
+		var fila2=a21+a22+a23;
+		var fila3=a31+a32+a33;
+		var columna1=a11+a21+a31;
+		var columna2=a12+a22+a32;
+		var columna3=a13+a23+a33;
+		var diagonal1=a11+a22+a33;
+		var diagonal2=a13+a22+a31;
+		
+		//Proceso para comprobar que no se repiten números
+		
+		//Proceso para comprobar que son los primeros naturales impares
+		
+		//Proceso para comprobar que siempre suman 27
+		
+		var contador=0;
+		if (fila1==27) {
+			contador=contador+1;
+		}
+		if (fila2==27) {
+			contador=contador+1;
+		}
+		if (fila3==27) {
+			contador=contador+1;
+		}
+		if (columna1==27) {
+			contador=contador+1;
+		}
+		if (columna2==27) {
+			contador=contador+1;
+		}
+		if (columna3==27) {
+			contador=contador+1;
+		}
+		if (diagona1==27) {
+			contador=contador+1;
+		}
+		if (diagonal2==27) {
+			contador=contador+1;
+		}
+		alert("Aciertos = "+contador);
+		
 	</script>
 	
 <DIV TYPE=FOOTER>
