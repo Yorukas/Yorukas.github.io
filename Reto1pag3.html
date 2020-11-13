@@ -71,17 +71,25 @@ DE LA VERIFICACI&Oacute;N</B></I></FONT></FONT></P>
 		var diagonal1=b11+b22+b33;
 		var diagonal2=b13+b22+b31;
 		
-	
-		
+		var texto1="Todos los números son distintos";
+		var texto2="Hay números repetidos";
+		var texto3="Todos los números están dentro de los 9 primeros impares";
+		var texto4="No todos los números están dentro de los 9 primeros impares";
+		var texto5="Todas las sumas dan como resultado 27";
+		var texto6="No todas las sumas dan como resultado 27";
+		var texto10={};
+		var texto11={};
+		var texto12={};
 		//Proceso para comprobar que no se repiten números
 		
 		let vector = [b11,b12,b13,b21,b22,b23,b31,b32,b33];
 		let conjunto = new Set(vector);
 		if (conjunto.size==9){
-			alert("No se repiten elementos");
+			texto10=texto1;
 		}else{
-			alert("Se repiten números gañan");
+			texto10=texto2;
 		}
+		alert(texto10);
 		//Proceso para comprobar que son los primeros naturales impares
 		
 		//Proceso para comprobar que siempre suman 27
