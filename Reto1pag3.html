@@ -90,15 +90,18 @@ DE LA VERIFICACI&Oacute;N</B></I></FONT></FONT></P>
 		}
 		
 		
-			
+		 //Proceso para comprobar que son los primeros naturales impares	
 		var vamos=0;
+		
 		var f=parImpar(b11);
 		if (f=="impar" && b11<18) {
-		alert("El "+b11+" es "+f+" y el número es menor que 18");
-		}else{
-			alert("No se permiten números pares");
+		vamos=vamos+1;
 		}
-		 //Proceso para comprobar que son los primeros naturales impares
+		var f=parImpar(b12);
+		if (f=="impar" && b11<18) {
+		vamos=vamos+1;
+		}
+		alert(vamos);
 		
 		
 		
