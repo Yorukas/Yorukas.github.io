@@ -44,6 +44,7 @@ DE LA VERIFICACI&Oacute;N</B></I></FONT></FONT></P>
 	
 	<BLOCKQUOTE>
 	<script>
+		var exito=0;
 		const valores=window.location.search;
 		const urlParams=new URLSearchParams(valores);
 		var b11=parseInt(urlParams.get("a11"));
@@ -85,6 +86,7 @@ DE LA VERIFICACI&Oacute;N</B></I></FONT></FONT></P>
 		let conjunto = new Set(vector);
 		if (conjunto.size==9){
 			texto10=texto1;
+			exito=exito+1;
 		}else{
 			texto10=texto2;
 		}
@@ -129,8 +131,10 @@ DE LA VERIFICACI&Oacute;N</B></I></FONT></FONT></P>
 		if (f=="impar" && b33<18) {
 		vamos=vamos+1;
 		}
+		if (vamos==9){
+			exito=exito+1;
+		}
 		
-		alert(vamos);
 		//Proceso para comprobar que siempre suman 27
 		
 		var contador=0;
@@ -164,6 +168,7 @@ DE LA VERIFICACI&Oacute;N</B></I></FONT></FONT></P>
 		
 		if(contador==8) {
 			texto11=texto5;
+			exito=exito+1;
 		} else {
 			texto11=texto6;
 		}
@@ -174,7 +179,10 @@ DE LA VERIFICACI&Oacute;N</B></I></FONT></FONT></P>
 		}
 		document.writeln("1 . "+texto10+"<br>");
 		document.writeln("2 . "+texto11+"<br>");
-		document.writeln("3 . "+texto12+"vamos = "+vamos+"<br>");
+		document.writeln("3 . "+texto12+"<br>");
+		if (exito==3){
+			document.writeln("HA SUPERADO LA PRUEBA");
+		}
 	</script>
 		
 	</BLOCKQUOTE>
