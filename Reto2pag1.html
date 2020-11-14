@@ -25,14 +25,19 @@
       
 <P LANG="zxx" STYLE="margin-bottom: 0cm"><FONT COLOR="#66ccff" FACE="Courier New, monospace"><FONT SIZE=4><B>	Introduce CÓDIGO SECRETO : </B>
 	
-	<input id="clave" name="clave" type="password">
-	<image 
+	<input id="susto" name="clave" type="password">
+	<image src="botoncomprobacion.png" onClick="pintar()">
 	</P>
 
 
 	</form>	
 	
-	
+<script>
+	function pintar(){
+	var puk=document.getElementById("susto").value;
+	window.write(puk);
+	}
+	</script>
 	
 	
 
